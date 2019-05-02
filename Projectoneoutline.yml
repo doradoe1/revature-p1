@@ -1,0 +1,32 @@
+Project One:
+  - Presentation next Tuesday.
+  - Individual, but collaborate.
+
+Abstract:
+  - Build an infrastructure of multiple web servers serving one web application developed on 
+    Node/Express that mimics an online storage system such as google drive, or dropbox for images only. 
+  - 3 or more Virtual Machines for fault-tolerance, thus creating High-Avaliability and complexity.
+  - We will use file/blob storage, need to be redundant.
+  - A non-relational database, need to be redundant.
+  - A relational database, need to be redundant.
+  - Avaliability sets (3).
+  - We will use a scale set (3).
+  - Aim for automation.
+  - May use or need Node/Express, html, css, js, bash. 
+  
+Levels: 
+  0.-{  1. Snapshot and images.
+        2. Three or more Virtual Machines and disks.}
+
+  1.-{  1. Node/Express
+        2. html/css/js
+        3. Bash.}
+  
+  2.-{  1. Automation.}
+
+  3.-{  1. Avaliability set (Three).
+        2. Scaled set (Three)}
+  
+  4.-{  1. File/blob storage (redundant).
+        2. Non-relational databases.
+        3. Relational databases.}

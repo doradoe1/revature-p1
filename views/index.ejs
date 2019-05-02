@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background:blue">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Towfikul Image Uploader: Share your Images :)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body style="background:blueviolet">
+    <div class="container">
+        <center>
+            <h1 style="color:aqua;font-size:40px"><strong
+                    style="color:black;font-size:55px;font:bold;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Thank
+                    you for Using
+                    Towfikul Image
+                    Uploader.</strong>
+                <br></br>
+                Select the Image that you Wish to Upload.
+            </h1>
+        </center>
+        <h0>________________________________________________________________________________________________________________________________________________________________________
+        </h0>
+        <h1>Image Upload:</h1>
+        <%= typeof msg != 'undefined' ? msg : '' %>
+        <form action="upload" method="POST" enctype="multipart/form-data">
+            <div class="file-field input-field">
+                <div class="btn green">
+                    <span>File</span>
+                    <input name="myimage" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload an Image">
+                </div>
+            </div>
+            <button type="submit blue" class="btn">Upload Files</button>
+        </form>
+        <br>
+        <img src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
