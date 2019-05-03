@@ -18,7 +18,7 @@ const upload = multer({
     fileFilter: function (req, file, cb) {
         checkfiletype(file, cb);
     }
-}).single('myimage');
+}).single('towfikul');
 
 //Function to check the file type:
 function checkfiletype(file, cb) {
