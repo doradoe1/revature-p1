@@ -4,18 +4,6 @@ const ejs = require('ejs');
 const path = require('path');
 const Sequelize = require('sequelize');
 
-// Sequilize
-//const sequelize = new Sequelize('doradomayday.database.windows.net');
-
-//sequelize
-//.authenticate()
-//.then(() => {
-//console.log('Connection has been established successfully.');
-//})
-//.catch(err => {
-//console.error('Unable to connect to the database:', err);
-//});
-
 //Set the storage engine for Multer:
 const storage = multer.diskStorage({
     destination: './public/uploads/',
