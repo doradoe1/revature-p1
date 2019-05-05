@@ -17,7 +17,7 @@ az cosmosdb database create \
 --resource-group doradoe1_asp_Linux_centralus
 
 ##Show the database:
-az cosmosdb database show --db-name
+az cosmosdb database show
 --db-name $database \
 --name $cosmosdbaccount \
 --resource-group doradoe1_asp_Linux_centralus
