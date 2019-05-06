@@ -43,7 +43,8 @@ az group deployment create \
 az appservice plan update \
 --name $appname \
 --number-of-workers $workers \
---resource-group doradoe1_asp_Linux_centralus
+--resource-group doradoe1_asp_Linux_centralus \
+--sku B1
 
 ##Create a scale set (allows for redundancy):
 az vmss create \
